@@ -1,8 +1,12 @@
 # Case-Study-2
-DSA PROJECT WORK: Kultra Mega Stores 
+## DSA PROJECT WORK: Kultra Mega Stores 
+
+
 ------ table
 Import KMS table
+
 When importing the KMS table, i made Row_ID as the primary and allow null for Product_Base_Margin
+
 select * from KMS ( It is used to check the table that was imported)
 
 CASE SCENARIO I
