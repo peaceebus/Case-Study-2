@@ -3,6 +3,7 @@
 
 
 ------ table
+
 Import KMS table
 
 When importing the KMS table, i made Row_ID as the primary and allow null for Product_Base_Margin
@@ -10,28 +11,36 @@ When importing the KMS table, i made Row_ID as the primary and allow null for Pr
 select * from KMS ( It is used to check the table that was imported)
 
 CASE SCENARIO I
+
 (1). Which product category had the highest sales?
 ANSWER; 
+
 select Product_Category, sum(Sales) as TotalSales
 from KMS
 group by Product_Category
 order by TotalSales DESC
+
 Conclusion: Using this sql query, i was able to ascertain the product category with the highest sale.
 The product category include; Technology, Furniture	and Office Supplies.
 
 (2). What are the Top 3 and Bottom 3 regions in terms of sales?
+
 ANSWER;
+
 (A) Top 3 Regions in terms of sales:
+
 select Top 3 Region, sum(Sales) as TotalSales
 from KMS
 Group by Region
 Order by TotalSales DESC
 
 (B) Bottom 3 Regions in terms of sales:
+
 select Top 3 Region, sum(Sales) as TotalSales
 from KMS
 Group by Region
 Order by TotalSales ASC
+
 Using the ascending and descending order sql query to determine the top and bottom 3 regions in terms of sales, the top and bottom 3 regions includes the following respectively;
 West, Ontario, Prarie and Nunavut, Northwest Territories, Yukon.
 
