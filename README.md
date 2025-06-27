@@ -10,9 +10,10 @@ When importing the KMS table, i made Row_ID as the primary and allow null for Pr
 
 select * from KMS ( It is used to check the table that was imported)
 
-CASE SCENARIO I
+## CASE SCENARIO I
 
 (1). Which product category had the highest sales?
+
 ANSWER; 
 
 select Product_Category, sum(Sales) as TotalSales
@@ -79,7 +80,7 @@ iv) Most times the management should provide opportunity for its customers to ai
 
 v) Analyse their purchase history and perferences.
 
-#### THE SQL QUERY
+**THE SQL QUERY**
 
 select TOP 10 Customer_Name, Sum(Sales) as TotalSales
 
